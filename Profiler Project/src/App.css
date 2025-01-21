@@ -1,0 +1,26 @@
+.App {
+  text-align: center;
+}
+
+.profiles-container {
+  display: flex;
+  flex-direction: row; 
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: stretch; 
+  gap: 20px;
+  padding: 20px;
+  margin: auto;
+}
+
+@media (max-width: 768px) {
+  .profiles-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .profiles-grid {
+    grid-template-columns: 1fr;
+  }
+}

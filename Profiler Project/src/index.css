@@ -1,0 +1,159 @@
+.profiles-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 20px;
+  justify-content: center;
+}
+
+.profile-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start; 
+  margin-left: 20px; 
+  position: relative;
+  z-index: 2; 
+}
+
+.profile-name {
+  font-size: 16px; 
+  color: #333; 
+  margin: 5px 0; 
+  font-weight: bold; 
+  position: relative;
+  z-index: 2; 
+}
+
+.profile-username {
+  font-size: 16px;
+  color: #333;
+  margin-bottom: 10px; 
+  position: relative;
+  z-index: 2; 
+}
+
+.profile-card {
+  box-shadow: 0px 0px 5px rgba(0,0,0,0.1);
+  border-radius: 0px;
+  padding: 30px;
+  margin-left: 1px;
+  margin-right: 1px;
+  text-align: left; 
+  background-color: white;
+  display: flex; 
+  align-items: center; 
+  position: relative; 
+  overflow: hidden;
+}
+
+.profile-card:hover {
+  box-shadow: 0 4px 8px rgba(131, 131, 131, 0.3); 
+  transform: scale();
+}
+
+.profile-card:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(240, 240, 240, 0.905);
+  opacity: 0; 
+  transition: opacity 0.2s; 
+}
+
+.profile-card:hover::after {
+  opacity: 1; 
+}
+
+.profile-icon {
+  width: 60px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  margin-right: 20px; 
+  font-size: 20px;
+  color: #333;
+  font-weight: bold;
+  position: relative;
+  z-index: 2;
+  cursor: pointer;
+}
+
+.profile-icon:hover {
+  background-color: rgb(135, 135, 135) !important;
+  color: white; 
+}
+
+.profile-social-links .social-link {
+  margin-right: 10px; 
+  position: relative;
+  z-index: 2; 
+  color: blue;
+}
+
+.profile-social-links .social-link:last-child {
+  margin-right: 0; 
+}
+
+.profile-social-links .social-link:hover {
+  color: rgb(45, 45, 45);
+}
+
+.profile-detail-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; 
+}
+
+.pro-name, .pro-age, .pro-occupation, .pro-favorite-movie {
+  margin: 10px 0;
+  font-size: 20px;
+  display: flex;
+  align-items: center; 
+}
+
+.profile-detail .profile-icon:hover {
+cursor: default; 
+color: black;
+}
+
+.profile-detail {
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+  height: 1000px; 
+  text-align: center;
+  flex-direction: column;
+}
+
+
+.profile-detail {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 900px;
+  text-align: center;
+}
+
+.profile-detail div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 5px 0;
+}
+
+.profile-detail .info-label {
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+.pro-info-name {
+  font-size: 40px;
+  margin-bottom: 10px;
+}
